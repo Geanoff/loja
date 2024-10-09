@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    /* background: url('https://th.bing.com/th/id/R.71bd1f639a349be73e3a50aff654f6fe?rik=rQGoUv7Gu4dm3g&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fFree-Download-Abstract-Backgrounds-HD.jpg&ehk=QOpjZ8DwoI9TaAykD9GWkZ%2f%2bcOr5dXeCPpEvvEXrV5k%3d&risl=&pid=ImgRaw&r=0') no-repeat center/cover;
+    height: 100vh; */
+    background-color: aliceblue;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    height: 70px;
+    background-color: white;
+}
+
+header h1 {
+    letter-spacing: 3px;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: .3s;
+    text-decoration-color: blueviolet;
+
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+
+}
+
+
+/* ====== MAIN ====== */
+main {
+    padding: 50px;
+}
+
+.img {
+    width: 250px;
+    height: 150px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 180px;
+}
+
+.produto img {
+    transition: .5s;
+}
+
+.produtos_lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.produto {
+    border-radius: 5px;
+    width: 250px;
+    padding: 10px;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.produto:hover img{
+    transform: translateY(-15px);
+}
+
+.produto span:nth-of-type(2)
+ {
+    text-align: center;
+}
+
